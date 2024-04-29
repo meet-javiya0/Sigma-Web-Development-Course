@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- if one attribute is set then other attribute is automatically adjusted accrording to the image for height and width of the image -->
+    <img height="279" src="image.jpeg" alt="Train image">
+
+    <!-- here this br tag brakes line after the image -->
+    <br>
+
+    <!-- this tag is used for making tables in html -->
+    <table>
+        <!-- to show title of the table -->
+        <caption>Employee details</caption>
+
+        <thead>
+            <!--  header content -->
+            header
+        </thead>
+
+        <tbody>
+            <!-- table row -->
+            <tr>
+                <!-- table heading -->
+                <th>Name</th>
+                <th>Age</th>
+                <th>Designation</th>
+                <th>Favourite Language</th>
+            </tr>
+
+            <tr>
+                <!-- table data -->
+                <td>Meet</td>
+                <td>100</td>
+                <td>Programmer</td>
+                <td>Java</td>
+            </tr>
+
+            <tr>
+                <!-- both the attributes are used in td -->
+                <!-- colspan is similar as merge cell in excel it uses that space for that data -->
+                <td>Jenish</td>
+                <!-- rowspan is similar as merge vertical cell in excel it uses that space for that data -->
+                <td>101</td>
+                <td>Programmer</td>
+                <td>Python</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Sanjay</td>
+                <td rowspan="2">Programmer</td>
+                <td>C</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Sanjay</td>
+                <td>Javascript</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <!-- footer content -->
+            <td colspan="2">footer</td>
+            <td rowspan="2">footer</td>
+            <td>footer</td>
+        </tfoot>
+    </table>
+
+    <!-- unordered list and types are square, circle and disc(default) -->
+    <ul type="square">
+        <!-- list for unordered list  -->
+        <li>Meet</li>
+        <li>Jenish</li>
+        <li>Sanjay</li>
+    </ul>
+
+    <!-- ordered list and types are i -> lowercase roman numbers, I -> Uppercase roman numbers, a -> lowercase alphabtes, A -> Uppercase alphabets, 1(default)-> arabic numbers -->
+    <ol type="i">
+        <!-- list for ordered list  -->
+        <li>Meet</li>
+        <li>Jenish</li>
+        <li>Sanjay</li>
+    </ol>
+
+    <h1>HTML Definition List</h1>
+    <!-- Definition list -->
+    <dl>
+        <!-- Definition term -->
+        <dt>HTML</dt>
+        <!-- Definition description -->
+        <dd>HyperText Markup Language: The standard language for creating web pages.</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets: A stylesheet language used for describing the look and formatting of a document
+            written in HTML.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>A programming language commonly used in web development to add interactive features.</dd>
+    </dl>
+</body>
+
+</html>
