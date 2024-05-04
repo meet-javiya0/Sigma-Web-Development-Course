@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - let's learn it</title>
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Form to apply for Sigma Web Development Course - TA</h1>
+
+    <!-- form tag is used to create an HTML form for user input. -->
+    <form method="post">
+        <div>
+            <!-- the label tag is used to define a label for an input element. -->
+            <label for="username">Enter your username: </label>
+            <!-- the input tag is used to create an input element. -->
+            <input type="text" id="username" name="username" placeholder="Enter your username" autofocus required>
+        </div>
+
+        <div>
+            <!-- the radio button is used to select one option from many options. we have to use the same name attribute for all radio buttons to make them a group. -->
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <!-- the checkbox is used to select one or more options from many options. -->
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+
+        <div>
+            <!-- the textarea tag is used to create a multi-line text input control. -->
+            <label for="comment">Enter your comment</label>
+            <br>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+        </div>
+
+        <div>
+            <!-- the select tag is used to create a drop-down list. -->
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+
+        <div>
+            <!-- the input tag with type submit is used to create a submit button. we can also use button for this -->
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>

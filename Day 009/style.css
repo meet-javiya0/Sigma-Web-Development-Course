@@ -1,0 +1,14 @@
+/* we have to use . to access classes in css */
+.red {
+    color: red;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+/* we have to use # to access id in css */
+#firstDiv {
+    /* background-color: red; */
+    color: black;
+}
