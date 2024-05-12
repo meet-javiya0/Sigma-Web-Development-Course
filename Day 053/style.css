@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.darkShadow {
+    background-color: black;
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    z-index: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+nav img {
+    opacity: 0.85;
+    z-index: 10;
+}
+
+.btn {
+    position: relative;
+    text-align: center;
+}
+
+#language,
+.btnLanguage {
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    border: 0.1px solid rgb(107, 105, 105);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#language {
+    padding: 5px 10px 5px 10px;
+}
+
+.btnSignIn {
+    position: relative;
+    background: transparent;
+    color: white;
+    background-color: rgb(229, 9, 20);
+    padding: 8px 20px 8px 18px;
+    margin: 0 15px;
+    border-radius: 5px;
+    border: 0 solid transparent;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btnSignIn:hover {
+    background-color: rgb(193, 17, 25);
+}
+
+.promoBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    height: calc(80vh - 80px);
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 15px;
+}
+
+.subTitle {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 15px;
+}
+
+.subTitle2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px;
+}
+
+.input {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.input input {
+    font-size: 16px;
+    font-weight: 400;
+    width: 35%;
+    padding: 2px 10px 2px 13px;
+    background: rgb(41, 40, 40);
+    opacity: 0.75;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin: 5px;
+}
+
+.input button {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 5px;
+    padding: 7px 20px 7px 20px;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.separationLine {
+    width: 100%;
+    height: 9px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+}
+
+.contentInfo {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin: auto;
+    padding: 50px;
+    width: 69%;
+}
+
+.contentInfoText {
+    display: flex;
+    flex-direction: column;
+}
+
+.contentInfoTitle {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.contentInfoSubTitle {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.playableContainer {
+    width: 640px;
+    position: relative;
+}
+
+.playableContainer img {
+    position: relative;
+    z-index: 10;
+    width: 640px;
+}
+
+.playableContainer video {
+    width: 465px;
+    height: auto;
+    position: absolute;
+    left: 85px;
+    top: 79px;
+}
+
+.playableContainer2 {
+    width: 640px;
+    position: relative;
+}
+
+.playableContainer2 img {
+    position: relative;
+    z-index: 10;
+    width: 640px;
+}
+
+.playableContainer2 video {
+    width: 405px;
+    height: auto;
+    position: absolute;
+    left: 105px;
+    top: 58px;
+}
+
+.faqSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+.faqTitle {
+    font-size: 48px;
+    margin: 15px;
+}
+
+.faqItem {
+    width: 60%;
+    height: 80px;
+    margin: 5px;
+    padding: 0 20px;
+    background-color: #2d2d2d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.faqItem:hover {
+    background-color: #414141;
+}
+
+.faqSectionAction {
+    margin-top: 35px;
+}
+
+.faqSectionInput {
+    margin-bottom: 40px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    padding: 50px;
+    margin: auto;
+    font-size: 15px;
+}
+
+.helplineNumber {
+    margin: 0 0 25px 0;
+}
+
+.topics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 0 30px 0;
+    gap: 10px;
+    text-decoration: underline;
+}
+
+.topic {
+    cursor: pointer;
+}
+
+.footerLanguage {
+    width: 100px;
+    margin: 0 0 10px 0;
+}
+
+@media screen and (max-width: 1400px) {
+    .contentInfo {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contentInfo {
+        flex-direction: column;
+    }
+
+    .topics {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .input input {
+        width: 50%;
+    }
+
+    .input button {
+        font-size: 18px;
+    }
+
+    .input {
+        width: 80%;
+    }
+
+    .contentInfoTitle {
+        font-size: 32px;
+    }
+
+    img, video {
+        scale: 0.9;
+    }
+
+    .playableContainer, .playableContainer2 {
+        scale: 0.8;
+    }
+
+    .faqTitle {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .subTitle {
+        font-size: 18px;
+    }
+
+    .subTitle2 {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .input {
+        flex-direction: column;
+    }
+
+    .input button {
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topics {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    img, video {
+        scale: 0.5;
+    }
+
+    .contentInfo {
+        padding: 20px 0;
+        margin: auto;
+    }
+
+    .footer {
+        padding: 5px;
+    }
+
+    .playableContainer, .playableContainer2 {
+        scale: 0.5;
+    }
+
+    .input button {
+        font-size: 14px;
+    }
+
+    .input {
+        width: 90%;
+        align-items: center;
+    }
+}

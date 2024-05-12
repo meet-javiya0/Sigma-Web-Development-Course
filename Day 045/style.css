@@ -1,0 +1,25 @@
+.container {
+    background-color: antiquewhite;
+    height: 50vh;
+    width: 50vw;
+}
+
+.box {
+    background-color: aquamarine;
+    width: 5vw;
+    height: 4vh;
+
+    /* we can apply transition like this */
+    /* transition-property: transform; */
+    /* transition-property: all; */
+    transition-property: transform, background-color;
+    transition-duration: 3s;
+    /* transition-timing-function: ease-in-out; */
+    transition-timing-function: cubic-bezier(0, 0.53, 0.78, 0.98);
+    transition-delay: 1s;
+}
+
+.translate{
+    transform: translateX(10vw) translateY(10vh) scale(1.5);
+    background-color: burlywood;
+}

@@ -1,0 +1,22 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navContainer ul {
+    display: flex;
+    gap: 30px;
+}
+
+.navContainer ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.languageLogo {
+    height: 21px;
+}

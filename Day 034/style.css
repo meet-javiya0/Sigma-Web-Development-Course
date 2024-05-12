@@ -1,0 +1,23 @@
+.cards {
+    border: 2px solid black;
+
+    /* ccreates a block element box that establishes a new block formatting context(BFC) for its contents */
+    display: flow-root;
+}
+
+.card {
+    border: 2px solid red;
+}
+
+/* selects nth child of card class */
+.card:nth-child(3) {
+    background-color: antiquewhite;
+
+    /* prevent element from floating on other elements */
+    clear: both;
+}
+
+img {
+    /* let element float on the other elements */
+    float: right;
+}

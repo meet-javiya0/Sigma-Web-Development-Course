@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Masterclass</title>
+
+    <style>
+        /* Element Selector (Type Selector) */
+        /* an element selector(tag selector), selects all HTML elements on a web page by specified names. It is a strong selector */
+        div {
+            background-color: darkgray;
+        }
+
+        /* Class Selector */
+        /* .class selector selects elements with a specific class attribute - by using . at the beginning */
+        .red {
+            background-color: red;
+        }
+
+        /* ID Selector */
+        /* id selector selects a unique element in an HTML page - by using # at the beginning */
+        #green {
+            background-color: green;
+        }
+
+        /* Child Selector */
+        /* a child selector selects all child elements of a specific parent element */
+        /* it only applies to the direct child */
+        div>p {
+            background-color: brown;
+            color: aqua;
+        }
+
+        /* Descendent Selector */
+        /* a combinator selector that matches all elements that are descendants of a specified element */
+        /* it applies to all the childs */
+        div p {
+            background-color: brown;
+            color: cadetblue;
+        }
+
+        /* Universal Selector */
+        /* the universal selector is the asterisk (*). It's used to select all elements on an HTML page */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        /* pseudo-selector selects a specific part of an HTML element or selects an HTML element only when it is in a specific state */
+        a:visited {
+            color: yellow;
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:active {
+            background-color: red;
+        }
+
+        a:hover {
+            background-color: brown;
+            color: yellow;
+        }
+
+        /* if p is the first child of it's parent then applies these property */
+        p:first-child {
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+
+    <div class="red">
+        I am a div
+        <p>I am a paragraph inside div</p>
+        <article>
+            <p>I am a paragraph inside div and article</p>
+        </article>
+    </div>
+
+    <div id="green">
+        I am another div
+    </div>
+
+    <a href="https://www.google.com" target="_blank">Go to Google</a>
+    <a href="https://www.facebook2.com" target="_blank">Go to Facebook</a>
+</body>
+
+</html>

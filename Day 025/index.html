@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling lists using CSS</title>
+    <style>
+        nav ul li {
+            /* changes list style to devanagari */
+            list-style: devanagari;
+
+            /* adds list style into the list by default it is outside of the list*/
+            list-style-position: inside;
+
+            /* it changes the style of list into the given type */
+            list-style-type: "😎";
+
+            /* we can also set images as list style */
+            /* list-style-image: url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); */
+
+            /* we can apply both as written below */
+            /* list-style: disc inside url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); */
+
+            background-color: antiquewhite;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+
+</html>

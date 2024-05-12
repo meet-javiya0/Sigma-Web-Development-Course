@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', sans-serif;
+}
+
+body {
+    background-color: #6ea5fccc;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+ul {
+    display: flex;
+    background-color: #061872cc;
+    color: white;
+    font-weight: 500;
+}
+
+ul li {
+    list-style: none;
+    padding: 23px;
+}
+
+.boxes {
+    width: 1225px;
+    height: 543px;
+    margin: 20px;
+    background-color: rgb(255, 123, 0);
+    border: 2px solid rgb(168, 2, 245);
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    width: 425px;
+    height: 425px;
+    background-color: brown;
+    margin: 60px 0px 60px 125px;
+}
+
+.title {
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 50px;
+    margin: 30px;
+    text-align: center;
+}
+
+.logoIcon {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 25px;
+}

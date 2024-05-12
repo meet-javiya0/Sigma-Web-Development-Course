@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Property</title>
+    <style>
+        .box {
+            width: 15vw;
+            height: 15vh;
+            border: 2px solid black;
+
+            /* it tells that how we allows to overflow */
+            /* overflow: scroll; */
+            overflow: auto;
+
+            /* we can also control it in x and y */
+            /* overflow-x: auto;
+            overflow-y: scroll; */
+
+            /* shorthand notation for overflow-x and overflow-y */
+            overflow: auto auto;
+
+            /* it makes text in one line */
+            white-space: nowrap;
+
+            /* it changes how the text will be allowed to overflow */
+            /* text-overflow: ellipsis; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a good boy and I love to write Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti tenetur
+        labore quibusdam inventore reiciendis dolore nobis dolorum facilis dolor commodi laboriosam atque nesciunt aut
+        quasi, ullam pariatur repudiandae cumque itaque deserunt sed sequi officiis necessitatibus molestiae. Ducimus
+        voluptatum omnis id numquam rerum quibusdam pariatur quisquam!
+    </div>
+</body>
+
+</html>

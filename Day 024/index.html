@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outlines</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 24px;
+            /* gives shadow to the box */
+            box-shadow: 5px 7px 10px 0px #f00;
+        }
+
+        .text-element {
+            /* gives shadow to the text */
+            text-shadow: 1px 1px 4px #f00;
+
+            /* outline is not a part of box-model it is similar to the border but has some differences*/
+            outline: 2px solid black;
+
+            /* Differences between Outline and Border: */
+            /* 1. Position: outline don't take space, they are drwan around elements, outside of the border */
+            /* 2. Offset: using outline-offset we can set space between an outline and the edge of border of an element */
+            /* 3. Width: border can have varying widths on different sides, outline have uniform width */
+            /* 4. Rounded corners: border can have rounded corners using border-radius, while outline generally can not */
+            outline-offset: 5px;
+
+            border: 2px solid goldenrod;
+
+            /* adds radius for border */
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a box
+    </div>
+
+    <p class="text-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quam placeat praesentium, est magnam cum
+        voluptatibus rem vel optio amet vero quod, molestiae accusamus aperiam, harum dolores alias incidunt explicabo
+        soluta. Praesentium nisi saepe necessitatibus, repellendus magnam nihil est molestias, consectetur neque,
+        recusandae repellat architecto.
+    </p>
+</body>
+
+</html>

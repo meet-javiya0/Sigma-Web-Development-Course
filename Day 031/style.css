@@ -1,0 +1,33 @@
+body {
+    background-color: red;
+}
+
+.boxes {
+    display: flex;
+}
+
+.box {
+    width: 350px;
+    height: 350px;
+    background-color: yellow;
+    margin: 3px;
+    padding: 3px;
+}
+
+/* media query for landscape mode */
+@media screen and (orientation: landscape) {
+    body {
+        background-color: green;
+    }
+}
+
+/* media query for screen width less than 450px */
+@media only screen and (max-width: 450px) {
+    body {
+        background-color: blue;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+}

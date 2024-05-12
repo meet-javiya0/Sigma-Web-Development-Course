@@ -1,0 +1,130 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navContainer ul {
+    display: flex;
+    gap: 30px;
+}
+
+.navContainer ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.languageLogo {
+    height: 21px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1,
+h2 {
+    font-weight: normal;
+}
+
+.mainContent {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.downloadHeading {
+    font-size: 48px;
+    text-align: center;
+}
+
+.downloadMessage {
+    font-size: 24px;
+    text-align: center;
+}
+
+.downloadButton {
+    font-size: 14px;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: white;
+    background-color: #00b6d1;
+    text-decoration: none;
+    text-align: center;
+    margin: 30px 0 25px 0;
+}
+
+.downloadButton:hover {
+    background-color: #0295ac;
+}
+
+.downloadText {
+    font-size: 24px;
+    font-weight: normal;
+    padding: 25px 0 25px 80px;
+    background-size: 60px auto;
+    background-image: url("UE_logo_icon_white.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.downloadTextSmall {
+    font-size: 14.4px;
+}
+
+.downloadSection {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .downloadSection {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainContent {
+        width: 80vw;
+    }
+
+    .downloadSection {
+        grid-template-columns: auto;
+    }
+}
+
+.content {
+    background-color: #f9f9f9;
+    width: 250px;
+    height: 120px;
+    border-radius: 15px;
+    padding: 10px 0 36px 0;
+    text-align: center;
+}
+
+.smallText {
+    margin: 10px;
+}
+
+.downloadButton2 {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.downloadButton2:hover {
+    background-color: #3f923f;
+}

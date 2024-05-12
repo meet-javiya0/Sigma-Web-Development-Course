@@ -1,0 +1,61 @@
+.container {
+    background-color: rgb(9, 106, 106);
+    width: 30vw;
+    height: 80vh;
+}
+
+.box {
+    background-color: aqua;
+    width: 34px;
+    height: 45px;
+
+    /* this is how we apply animation */
+    /* animation: myAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0, 0, 0, 0.96);
+    animation-delay: 1s;
+    animation-direction: alternate-reverse;
+    animation-play-state: paused;
+    animation-fill-mode: forwards; */
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: myAnimation 3s ease-in-out 1s 1 backwards, myAnimation2 3s ease-in-out 1s 1;
+}
+
+@keyframes myAnimation {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellow;
+        transform: translateX(1000px);
+    }
+}
+
+@keyframes myAnimation2 {
+    0% {
+        transform: rotate(100deg);
+    }
+
+    20% {
+        transform: rotate(200deg);
+    }
+
+    40% {
+        transform: rotate(250deg);
+    }
+
+    60% {
+        transform: rotate(300deg);
+    }
+
+    80% {
+        transform: rotate(325deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,57 @@
+.container {
+    height: 100vh;
+    width: 80vw;
+    border: 2px solid black;
+    display: grid;
+    /* grid-template-columns: 120px 100px; */
+    /* grid-template-rows: 100px 100px 100px; */
+
+    /* we can also give names at the same time as below */
+    /* grid-template-columns: [col1] 120px [col2] 100px [col3]; */
+    /* grid-template-rows: [row1] 100px [row2] 100px [row3]; */
+
+    /* we can also specify it by fr unit */
+    width: 80vw;
+    /* grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr; */
+
+    /* there is one more way for this using repeat function */
+    /* grid-template-columns: repeat(3, 1fr); */
+
+    /* one more way for this using repeat function with minmax */
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+
+    /* gap: 34px; */
+    /* row-gap: 10px;
+    column-gap: 20px; */
+
+    justify-items: center;
+    align-items: center;
+}
+
+.item {
+    border: 2px solid red;
+    height: 55px;
+    width: 55px;
+}
+
+.item1 {
+    /* grid-row: 1/2;
+    grid-column: 1/2; */
+
+    /* we can also write this as below */
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/* .item3 {
+    grid-row: 2/3;
+    grid-column: col1/col3;
+} */
+
+/* .item4 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+} */

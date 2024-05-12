@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        * {
+            margin: 0; /* apply 0 margin to all elements */
+            padding: 0; /* apply 0 padding to all elements */
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black; /* applies 2px solid black border to the box */
+            /* width: 1920px; */
+            width: 80vw; /* 80% of the viewport width */
+            height: 5vh; /* 5% of the viewport height */
+            margin: auto; /* center align */
+            background-color: lightblue;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            /* height: 10vh; */
+            min-height: 80vh; /* minimum height of 80% of the viewport height it will increase if the content is more */
+            max-height: 100vh; /* maximum height it can take is 100% of the viewport height */
+            min-width: 70vw; /* minimum width of 70% of the viewport width */
+            max-width: 100vw; /* maximum width it can take is 100% of the viewport width */
+            margin: 10px auto; /* give 10px margin from top and bottom and center align from left and right */
+            font-size: 20px;
+            background-color: lightblue;
+        }
+
+        .container p {
+            /* font-size: 1em; it inherits the font size from the parent container */
+            font-size: 2rem; /* it will become 2 times the default font size of root element(HTML) here it is 24px */
+        }
+
+        /* default font size is 16px */
+        html {
+            font-size: 12px; /* apply 12px font size to the root element */
+        }
+
+        .container>div {
+            font-size: 2em;
+            border: 2px solid red;
+            width: 70%; /* 50% of the parent container and it can't be applied anywhere we want */
+        }
+
+        .container>div>div {
+            border: 2px solid blue;
+            width: 50%;
+        }
+
+        .mycont {
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 15px auto;
+            font-size: 22px;
+            width: 100vmin; /* 100% of the minimum of the viewport width and height */
+            height: 7vmax; /* 7% of the maximum of the viewport width and height */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units -->
+    <div class="box">
+        This is a box
+    </div>
+
+    <div class="container">
+        <p>
+            This is a pagraph inside a container
+        </p>
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis necessitatibus quia quod iste dolorem
+            voluptatem fuga quidem aspernatur. Nihil ipsa sint quae, beatae explicabo saepe impedit laboriosam magni
+            cupiditate expedita voluptates consequatur odit veritatis dolorum doloribus.
+
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero omnis voluptas est aliquam, dolores rem
+                laudantium nulla maiores odio fugit, totam voluptatem saepe!
+            </div>
+        </div>
+    </div>
+
+    <div class="mycont">
+        I am another container
+    </div>
+
+    <p>Absolute Units.</p>
+    <ol>
+        <li>cm - centimetres (1 cm = 37.8 px)</li>
+        <li>mm - millimetres</li>
+        <li>in - inches (1 in = 96 px = 2.54cm)</li>
+        <li>pt - points (1pt = 1/72th of 1 in)</li>
+        <li>pc - picas (1pc = 1/6th of 1 in)</li>
+        <li>px - pixel (1px = 1/96th of 1 in)</li>
+        <li>Generally we only use pixels to set dimensions of an element.</li>
+    </ol>
+
+    <p>Relative Units</p>
+    <ol>
+        <li>
+            em - Relative to the font size of the parent element. Eg: 5em means the size would be 5 times the
+            current font size.
+        </li>
+
+        <li>
+            ex - Relative to X height of the existing font
+        </li>
+
+        <li>
+            ch - Relative to the width/ radius of the character “0”.
+        </li>
+
+        <li>
+            rem - Relative to the font size of the root element.
+        </li>
+
+        <li>
+            vw - Relative to 1% of the width of the viewport. (Viewport is the area of the website visible to the user.)
+        </li>
+
+        <li>
+            vh - Relative to 1% of the height of the viewport
+        </li>
+
+        <li>
+            >% - Relative to the parent element&#39;s size.
+        </li>
+    </ol>
+
+
+    <p>Apart from this some of the other metrics used in CSS are-</p>
+
+    <ol>
+        <li> Ranges from 0 to 1</li>
+        <li>RGB & RGBA values: 0 to 255</li>
+        <li>HSL & HSLA values: 0 to 360</li>
+    </ol>
+</body>
+
+</html>

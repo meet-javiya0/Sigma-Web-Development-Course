@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+
+    <style>
+        /* the specificity is 0 here */
+        * {
+            color: blueviolet;
+        }
+
+        /* the specificity is 1 here */
+        h1 {
+            color: aqua;
+        }
+
+        /* the specificity is 10 here */
+        .yellow {
+            /* the specificity is 10000 here because of !important */
+            color: yellow !important;
+        }
+
+        /* the specificity is 10 here */
+        .cpurple {
+            color: purple;
+        }
+
+        /* this is attribute selector and it's specificity is 10 */
+        [data-x=a] {
+            background-color: red;
+        }
+
+        /* the specificity is 11 here because 1 for h1 and 10 for .cred class selector */
+        h1.cred {
+            color: red;
+        }
+
+        /* the specificity is 100 here */
+        #sample {
+            background-color: brown;
+        }
+
+        /* Here the specificity is 1(element) + 10(class) + 10(class) + 10(attribute) + 10(pseudo class) = 41 */
+        h1.class.cloud-based[href]:hover {
+            color: blueviolet;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- CSS stands for Cascading Stylesheets. The cascade is the algorithm for solving conflicts where multiple CSS rules apply to an HTML element. It's the reason that the text of the text styled with the below CSS will be yellow. -->
+
+    <!-- Understanding the cascade algorithm helps you understand how the browser resolves conflicts like this. The cascade algorithm has 4 distinct stages. -->
+
+    <!-- 1. Position and order of appearance: the order in which your CSS rules appear -->
+    <!-- If there are more than two rules that have selectors of identical specificity, the last one to be declared won -->
+
+    <!-- 2. Specificity: an algorithm that determines which CSS selector has the strongest match -->
+    <!-- CSS specificity determines which style rules get applied to an element when there are conflicts. Higher specificity means the style will be used. It's calculated based on a point system involving inline styles, IDs, classes, and tag names -->
+
+    <!-- So, the order of specificity is: -->
+    <!-- Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector -->
+
+    <!-- To calculate specificity, assign a value to each part of the selector: -->
+    <!-- Universal Selector: 0 -->
+    <!-- Element selectors and pseudo-elements: 1 -->
+    <!-- Class selectors, attribute selectors, and pseudo-classes: 10 -->
+    <!-- ID selectors: 100 -->
+    <!-- Inline styles: 1000 -->
+    <!-- Then, add up the values of all the parts in the selector. -->
+
+    <!-- 3. Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS -->
+
+    <!-- 4. Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type -->
+
+    <div>
+        <!-- data-x="a" is an attribute selector -->
+        <h1 id="sample" style="color: blue;" class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+
+</html>
