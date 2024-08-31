@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    background-color: green;
+    color: white;
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 30px;
+}

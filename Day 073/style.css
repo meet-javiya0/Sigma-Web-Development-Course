@@ -1,0 +1,36 @@
+.card {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    width: 900px;
+    height: 120px;
+}
+
+img {
+    width: 200px;
+    border-radius: 9px;
+}
+
+.image {
+    position: relative;
+}
+
+.time {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 10;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 33px;
+    padding: 3px;
+    opacity: 0.8;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.info {
+    padding: 5px;
+}
